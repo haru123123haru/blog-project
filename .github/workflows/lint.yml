@@ -11,4 +11,4 @@ jobs:
         uses: anishathalye/proof-html@v2
         with:
           directory: ./
-          ignore-favicon: true 
+          check_favicon: false
