@@ -1,0 +1,118 @@
+/* 基本的なスタイルリセットとフォント設定 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* フォーム全体のコンテナ */
+.contact-form {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.contact-form p {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* 各フォームグループ（ラベルと入力欄のセット） */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+}
+
+/* 必須マーク */
+.required {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-left: 0.2rem;
+}
+
+/* 入力欄（input, textarea）の共通スタイル */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* 入力欄のフォーカス時のスタイル */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* テキストエリアのリサイズを縦方向のみに許可 */
+textarea {
+    resize: vertical;
+}
+
+/* 送信ボタン */
+.submit-button {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* スマートフォン向けのレスポンシブ対応 */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    .contact-form {
+        padding: 1.5rem;
+    }
+    .contact-form h2 {
+        font-size: 1.8rem;
+    }
+}
